@@ -1,0 +1,56 @@
+@use 'variaveis';
+
+footer {
+  text-align: center;
+  padding: 3rem 0;
+  background: var(--card);
+  color: var(--text);
+  border-top: 1px solid var(--border);
+
+  .footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+
+    .footer-logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+
+      span {
+        animation: gradient 8s ease infinite;
+        background: linear-gradient(-45deg, #4361ee, #4895ef, #4cc9f0, #f72585);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+
+    .footer-text {
+      color: #9ca3af;
+      margin-bottom: 2rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+
+      a {
+        color: var(--text);
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+
+    .copyright {
+      color: #9ca3af;
+      font-size: 0.9rem;
+    }
+  }
+}

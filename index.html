@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="title">Portfólio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <style>
-        /* Basic styles for functionality */
+
         .language-dropdown { display: none; position: absolute; }
         .language-dropdown.active { display: block; }
         .nav-links.active { display: flex; }
@@ -86,6 +86,9 @@
             </div>
             
             <div class="about-content">
+                <div class="about-image">
+                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQGKsj3ncn-9BA/profile-displayphoto-shrink_800_800/B4DZYtznguG4Ag-/0/1744525229102?e=1750291200&v=beta&t=9lxEP-aPw_drJ3n2ZLl3j3GXCOGY_ay5GKVF9W-oKqo" alt="Silvia Soares">
+                </div>
                 <div class="about-text">
                     <p data-i18n="aboutText1">Minha jornada na área começou com a curiosidade em entender como as informações ao nosso redor podem ser transformadas em conhecimento útil. Ao longo do tempo, fui descobrindo o potencial dos dados para revelar padrões, responder perguntas e ajudar na construção de soluções mais inteligentes. Desde então, venho me dedicando a aprofundar minhas habilidades em análise, visualização e interpretação de dados, sempre com o objetivo de tornar essas informações mais claras e aplicáveis no dia a dia.</p>
                     <p data-i18n="aboutText2">Gosto de unir lógica e criatividade para encontrar respostas que realmente façam sentido — e, principalmente, que possam ser colocadas em prática.</p>
@@ -160,15 +163,13 @@
                             <span class="project-tag">Seaborn</span>
                             <span class="project-tag">Matplotlib</span>
                         </div>
-                        
                         <div class="project-links">
-                            <a href="#">
-                                <i class="fas fa-external-link-alt"></i> <span data-i18n="demo">Demo</span>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-github"></i> <span data-i18n="codigo">Código</span>
+                            <a href="https://github.com/silviaso1/CNDC-Analysis">
+                                <i class="fab fa-github"></i> <span data-i18n="notebook">Notebook</span>
                             </a>
                         </div>
+                        
+                        
                     </div>
                 </div>
                 
@@ -187,9 +188,6 @@
                         </div>
                         
                         <div class="project-links">
-                            <a href="#">
-                                <i class="fas fa-file-alt"></i> <span data-i18n="caseStudy">Case Study</span>
-                            </a>
                             <a href="#">
                                 <i class="fab fa-github"></i> <span data-i18n="notebook">Notebook</span>
                             </a>
@@ -212,9 +210,6 @@
                         </div>
                         
                         <div class="project-links">
-                            <a href="#">
-                                <i class="fas fa-images"></i> <span data-i18n="screenshots">Screenshots</span>
-                            </a>
                             <a href="#">
                                 <i class="fas fa-code"></i> <span data-i18n="dax">DAX</span>
                             </a>
@@ -275,13 +270,13 @@
                 </div>
                 
                 <div class="publication-footer">
-                    <a href="#" class="btn">
+                    <a href="https://zenodo.org/records/15092872" class="btn">
                         <i class="fas fa-book-open"></i> <span data-i18n="lerPesquisa">Ler Pesquisa Completa</span>
                     </a>
-                    <a href="#" class="btn btn-outline">
+                    <a href="assets/publicacao/research.pdf" class="btn btn-outline">
                         <i class="fas fa-download"></i> <span data-i18n="baixarPDF">Baixar PDF</span>
                     </a>
-                    <a href="#" class="btn btn-accent">
+                    <a href="https://lattes.cnpq.br/4301159007950673" class="btn btn-accent">
                         <i class="fas fa-id-card"></i> <span data-i18n="lattes">Lattes</span>
                     </a>
                 </div>
@@ -395,7 +390,6 @@
         </div>
     </section>
     
-    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact-container">
@@ -411,16 +405,14 @@
                     </a>
                     
                     <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/silviaso1" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/silviaso1 aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a href="#" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -429,13 +421,7 @@
                 </div>
                 <p class="footer-text" data-i18n="footerText">Transformando dados em decisões estratégicas.</p>
                 
-                <div class="footer-links">
-                    <a href="#home" data-i18n="inicio">Início</a>
-                    <a href="#about" data-i18n="sobre">Sobre</a>
-                    <a href="#experience" data-i18n="experiencia">Experiência</a>
-                    <a href="#projects" data-i18n="projetos">Projetos</a>
-                    <a href="#contact" data-i18n="contato">Contato</a>
-                </div>
+                
                 
                 <p class="copyright" data-i18n="copyright">Todos os direitos reservados.</p>
             </div>
@@ -443,6 +429,11 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/traducao.js"></script>
+    <script src="./js/tema.js"></script>
+    <script src="./js/particulas.js"></script>
+
+    
 </body>
 </html>

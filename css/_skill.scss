@@ -1,0 +1,44 @@
+@use 'variaveis';
+
+.skills-section {
+  margin: 4rem 0;
+}
+
+.skills-categories {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  justify-content: center;
+  gap: 2rem;
+
+  .skill-category {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+
+    h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 0.8rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &::before {
+          content: '▹';
+          color: var(--accent);
+        }
+      }
+    }
+  }
+}

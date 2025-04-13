@@ -1,0 +1,64 @@
+
+
+:root {
+    /* Cores modo claro */
+    --primary-light: #4361ee;
+    --secondary-light: #3a0ca3;
+    --accent-light: #f72585;
+    --text-light: #2b2d42;
+    --bg-light: #eeeeee;
+    --card-light: #e7e6e6;
+    --border-light: #b4b4b4;
+    
+    /* Cores modo escuro */
+    --primary-dark: #4895ef;
+    --secondary-dark: #4361ee;
+    --accent-dark: #f72585;
+    --text-dark: #f8f9fa;
+    --bg-dark: #121212;
+    --card-dark: #1e1e1e;
+    --border-dark: #000000;
+    
+    /* Variáveis ativas */
+    --primary: var(--primary-dark);
+    --secondary: var(--secondary-dark);
+    --accent: var(--accent-dark);
+    --text: var(--text-dark);
+    --bg: var(--bg-dark);
+    --card: var(--card-dark);
+    --border: var(--border-dark);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Efeito de partículas */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.30;
+}
+
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
