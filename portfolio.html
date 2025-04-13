@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styles for functionality */
+        .language-dropdown { display: none; position: absolute; }
+        .language-dropdown.active { display: block; }
+        .nav-links.active { display: flex; }
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Efeito de partículas -->
+    <div id="particles-js"></div>
+    
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <span>Silvia Soares</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" data-i18n="inicio">Início</a></li>
+            <li><a href="#about" data-i18n="sobre">Sobre</a></li>
+            <li><a href="#experience" data-i18n="experiencia">Experiência</a></li>
+            <li><a href="#projects" data-i18n="projetos">Projetos</a></li>
+            <li><a href="#education" data-i18n="formacao">Formação</a></li>
+            <li><a href="#skills" data-i18n="habilidades">Habilidades</a></li>
+            <li><a href="#certificates" data-i18n="certificados">Certificados</a></li>
+            <li><a href="#contact" data-i18n="contato">Contato</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="language-switcher">
+                <button class="language-btn">
+                    <i class="fas fa-globe"></i> PT
+                </button>
+                <div class="language-dropdown">
+                    <a href="#"><i class="fas fa-check"></i> Português</a>
+                    <a href="#"><i class="fas fa-globe"></i> English</a>
+                    <a href="#"><i class="fas fa-globe"></i> Español</a>
+                </div>
+            </div>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-i18n="heroTitle">Transformando Dados em <span>Insights Valiosos</span></h1>
+                <p data-i18n="heroText">Sou <strong>Silvia</strong>, Analista de Dados com encanto pelo processo de organizar e interpretar informações.</p>
+
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">
+                        <i class="fas fa-eye"></i> <span data-i18n="verProjetos">Ver Projetos</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i> <span data-i18n="enviarContato">Contato</span>
+                    </a>
+                    <a href="#" class="btn btn-accent">
+                        <i class="fas fa-file-alt"></i> <span data-i18n="verCurriculo">Currículo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sobre -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="aboutSubtitle">Sobre Mim</span>
+                <h2 class="section-title" data-i18n="aboutTitle">Conheça a profissional por trás dos dados</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p data-i18n="aboutText1">Minha jornada na área começou com a curiosidade em entender como as informações ao nosso redor podem ser transformadas em conhecimento útil. Ao longo do tempo, fui descobrindo o potencial dos dados para revelar padrões, responder perguntas e ajudar na construção de soluções mais inteligentes. Desde então, venho me dedicando a aprofundar minhas habilidades em análise, visualização e interpretação de dados, sempre com o objetivo de tornar essas informações mais claras e aplicáveis no dia a dia.</p>
+                    <p data-i18n="aboutText2">Gosto de unir lógica e criatividade para encontrar respostas que realmente façam sentido — e, principalmente, que possam ser colocadas em prática.</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experiência Profissional -->
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="experienceSubtitle">Trajetória Profissional</span>
+                <h2 class="section-title" data-i18n="experienceTitle">Experiência em Análise de Dados</h2>
+                <p class="section-description" data-i18n="experienceDescription">Minha jornada profissional com as principais responsabilidades.</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="node-main">
+                    <div class="timeline-content">
+                        <h3 class="node-title" data-i18n="exp1Title">Aprendiz</h3>
+                        <p class="node-company" data-i18n="exp1Company">Pensi - Colégio e Curso</p>
+                        <p class="node-date" data-i18n="exp1Date">2024 - Atual</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-node right">
+                    <div class="timeline-content">
+                        <h3 class="node-title" data-i18n="exp1Role1">Desenvolvimento de Software</h3>
+                        <p class="node-description" data-i18n="exp1Desc1">Fui responsável por desenvolver, do zero, um sistema de controle de estoque totalmente adaptado às necessidades da empresa. Esse sistema facilita o registro, o acompanhamento e a atualização dos produtos, trazendo mais controle e eficiência à operação.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-node left">
+                    <div class="timeline-content">
+                        <h3 class="node-title" data-i18n="exp1Role2">Desenvolvimento Web</h3>
+                        <p class="node-description" data-i18n="exp1Desc2">Contribuo com atualizações no site institucional. Com isso, ajudo a manter as informações sempre atualizadas e alinhadas com os processos internos.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-node right">
+                    <div class="timeline-content">
+                        <h3 class="node-title" data-i18n="exp1Role3">Otimização de Processos e Análise de Dados</h3>
+                        <p class="node-description" data-i18n="exp1Desc3">Acompanho de perto os dados e métricas que mostram como a escola está evoluindo, especialmente no que diz respeito às matrículas de alunos. Pra facilitar o dia a dia, automatizo processos manuais em planilhas — tanto no Google Sheets, usando Google Apps Script, quanto no Excel com VBA. Com isso, deixo as rotinas de atualização, controle de dados e geração de relatórios muito mais rápidas e organizadas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="projectsSubtitle">Trabalho Real</span>
+                <h2 class="section-title" data-i18n="projectsTitle">Projetos Destacados</h2>
+                <p class="section-description" data-i18n="projectsDescription">Seleção de projetos que demonstram minha abordagem e habilidades na solução de problemas com dados.</p>
+            </div>
+            
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sistema de Recomendação">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="project1Title">Análise Quantitativa de Iniciação Científica</h3>
+                        <p data-i18n="project1Desc">Desenvolvido na II Conferência Nacional de Defesa e Difusão da Ciência (CNDC 2025). O projeto é uma análise exploratória, baseada em dados simulados, a fim de investigar possíveis relações entre a participação em programas de iniciação científica e indicadores objetivos de desempenho profissional após a graduação.</p>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Pandas</span>
+                            <span class="project-tag">Seaborn</span>
+                            <span class="project-tag">Matplotlib</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#">
+                                <i class="fas fa-external-link-alt"></i> <span data-i18n="demo">Demo</span>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github"></i> <span data-i18n="codigo">Código</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="Análise de Churn">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="project2Title">Análise de Proteção e adoção de Animais- em breve</h3>
+                        <p data-i18n="project2Desc">O projeto propõe uma análise exploratória e comparativa de dois conjuntos de dados: um internacional, contendo informações sobre animais para adoção; e outro nacional, com dados sobre políticas públicas de proteção animal em municípios e estados brasileiros.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Pandas</span>
+                            <span class="project-tag">Seaborn</span>
+                            <span class="project-tag">Matplotlib</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#">
+                                <i class="fas fa-file-alt"></i> <span data-i18n="caseStudy">Case Study</span>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-github"></i> <span data-i18n="notebook">Notebook</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Dashboard Executivo">
+                    </div>
+                    <div class="project-content">
+                        <h3 data-i18n="project3Title">Dashboard - em breve</h3>
+                        <p data-i18n="project3Desc">Dashboard interativo para análise de dados educacionais com visualizações personalizadas e filtros dinâmicos.</p>
+                        
+                        <div class="project-tags">
+                            <span class="project-tag">Power BI</span>
+                            <span class="project-tag">DAX</span>
+                            <span class="project-tag">SQL</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#">
+                                <i class="fas fa-images"></i> <span data-i18n="screenshots">Screenshots</span>
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-code"></i> <span data-i18n="dax">DAX</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="educationSubtitle">Jornada Acadêmica</span>
+                <h2 class="section-title" data-i18n="educationTitle">Minha Formação</h2>
+                <p class="section-description" data-i18n="educationDescription">Uma trajetória de aprendizado contínuo e especialização em análise de dados e tecnologias relacionadas.</p>
+            </div>
+            
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3 class="education-degree" data-i18n="edu1Degree">Graduação em Análise e Desenvolvimento de Sistemas</h3>
+                    <p class="education-institution" data-i18n="edu1Institution">Faculdade de Educação Técnológica do Estado do Rio de Janeiro (FAETERJ)</p>
+                    <p class="education-date" data-i18n="edu1Date">2023 - Atual</p>
+                    <p class="education-description" data-i18n="edu1Description">Formação voltada para as principais áreas da computação. A grade curricular abrange disciplinas como programação orientada a objetos, desenvolvimento web, bancos de dados, estrutura de dados e engenharia de software, além de fundamentos em redes de computadores, sistemas operacionais, análise de requisitos e ciência de dados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publication Section -->
+    <section class="publication-section" id="publication">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="publicationSubtitle">Publicação</span>
+                <h2 class="section-title" data-i18n="publicationTitle">Big Data: Transformando Informação em Valor</h2>
+                <p class="section-description" data-i18n="publicationDescription">Minha pesquisa sobre aplicações de Big Data.</p>
+            </div>
+            
+            <div class="publication">
+                <div class="publication-header">
+                    <h3 class="publication-title" data-i18n="pub1Title">Os modelos preditivos na indústria: Como a Big Data e a Inteligência Artificial estão redefinindo os setores</h3>
+                    <span class="publication-date" data-i18n="pub1Date">Publicado em: 27/03/2025</span>
+                </div>
+                
+                <div class="publication-content">
+                    <p data-i18n="pub1Text1">Esta publicação explora como as empresas podem utilizar Big Data e Inteligência Artificial para aprimorar a tomada de decisões e impulsionar a inovação nos setores industriais. O estudo aborda desde os conceitos fundamentais dessas tecnologias até os impactos práticos em diferentes setores.</p>
+                    
+                    <p data-i18n="pub1Text2">O uso de Big Data e IA tem transformado a forma como as empresas operam, possibilitando modelos preditivos que antecipam tendências, otimizam operações e melhoram a experiência do cliente. Neste trabalho, analiso como a integração dessas tecnologias está redefinindo estratégias e criando vantagens competitivas.</p>
+                    
+                    <p data-i18n="pub1Topics">Principais tópicos abordados:</p>
+                    <ul>
+                        <li data-i18n="pub1Topic1">Aplicações de modelos preditivos nos setores industrial e comercial</li>
+                        <li data-i18n="pub1Topic2">Big Data e IA na otimização da tomada de decisões</li>
+                        <li data-i18n="pub1Topic3">Casos de sucesso e desafios na implementação dessas tecnologias</li>
+                        <li data-i18n="pub1Topic4">Impacto no desenvolvimento de novos produtos e serviços</li>
+                    </ul>
+                </div>
+                
+                <div class="publication-footer">
+                    <a href="#" class="btn">
+                        <i class="fas fa-book-open"></i> <span data-i18n="lerPesquisa">Ler Pesquisa Completa</span>
+                    </a>
+                    <a href="#" class="btn btn-outline">
+                        <i class="fas fa-download"></i> <span data-i18n="baixarPDF">Baixar PDF</span>
+                    </a>
+                    <a href="#" class="btn btn-accent">
+                        <i class="fas fa-id-card"></i> <span data-i18n="lattes">Lattes</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates" id="certificates">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="certificatesSubtitle">Conhecimento Validado</span>
+                <h2 class="section-title" data-i18n="certificatesTitle">Certificações Destacadas</h2>
+                <p class="section-description" data-i18n="certificatesDescription">Investimento contínuo em educação e validação de habilidades através de certificações.</p>
+            </div>
+            
+            <div class="certificates-container">
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                        <span class="certificate-badge" data-i18n="curso">Curso</span>
+                        <h3 data-i18n="cert1Title">Gestão Empresarial</h3>
+                        <div class="certificate-issuer">
+                            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQF9gniDG_MYBQ/company-logo_200_200/company-logo_200_200/0/1630619607251/speed_treinamentos_logo?e=2147483647&v=beta&t=4JksO1aeZa7DCHNGRJTE0kRVXVLpLtdfoizdTMhJhS0" alt="speed">
+                            <span data-i18n="cert1Issuer">Speed Treinamentos</span>
+                        </div>
+                    </div>
+                    <div class="certificate-body">
+                        <p data-i18n="cert1Desc">Fundamentos de Marketing Analytics, Análise de mercado e Estratégias de Promoção, Organização de recursos, Planejamento e Tomada de Decisão</p>
+                        <a href="#" class="certificate-link">
+                            <span data-i18n="verCredencial">Ver Credencial</span> <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                        <span class="certificate-badge" data-i18n="certificacao">Certificação</span>
+                        <h3 data-i18n="cert2Title">Business Intelligence</h3>
+                        <div class="certificate-issuer">
+                            <img src="https://media.licdn.com/dms/image/v2/C4D0BAQFGUHRJ26bFDw/company-logo_200_200/company-logo_200_200/0/1631312349936?e=2147483647&v=beta&t=2cxZo7IPlpqVmRsvk_tS2TYDHSqh8Q3SlFYcLW9nlVc" alt="Fiap">
+                            <span data-i18n="cert2Issuer">FIAP</span>
+                        </div>
+                    </div>
+                    <div class="certificate-body">
+                        <p data-i18n="cert2Desc">Gerenciamento e a manipulação de dados, com ênfase na criação e manutenção de bancos de dados, análise de grandes volumes de informações e implementação de processos de ETL (Extração, Transformação e Carga).</p>
+                        <a href="#" class="certificate-link">
+                            <span data-i18n="verCredencial">Ver Credencial</span> <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="certificate-card">
+                    <div class="certificate-header">
+                        <span class="certificate-badge" data-i18n="certificacao">Certificação</span>
+                        <h3 data-i18n="cert3Title">Data Science</h3>
+                        <div class="certificate-issuer">
+                            <img src="https://yt3.googleusercontent.com/Cd0fpIfeFbdAVcKQVLfmogPG2yyZJsTbdNAioPeJ0lALUITE65Fp1UlL8EoLs7JXtT0H-wwOPXo=s900-c-k-c0x00ffffff-no-rj" alt="ada">
+                            <span data-i18n="cert3Issuer">Ada Tech</span>
+                        </div>
+                    </div>
+                    <div class="certificate-body">
+                        <p data-i18n="cert3Desc">Formação focada em coleta, análise e interpretação de dados para geração de insights e apoio à tomada de decisão. Abrange fundamentos de estatística, programação (com Python), visualização de dados, machine learning, bancos de dados (SQL), além de técnicas de análise exploratória e manipulação de grandes volumes de dados.</p>
+                        <a href="#" class="certificate-link">
+                            <span data-i18n="verCredencial">Ver Credencial</span> <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="skillsSubtitle">Competências</span>
+                <h2 class="section-title" data-i18n="skillsTitle">Habilidades Técnicas</h2>
+                <p class="section-description" data-i18n="skillsDescription">Domínio de diversas tecnologias e metodologias para análise de dados.</p>
+            </div>
+            
+            <div class="align">
+                <div class="skills-categories">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> <span data-i18n="dbSkills">Bancos de Dados</span></h3>
+                        <ul>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                            <li>Oracle</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-line"></i> <span data-i18n="vizSkills">Análise & Visualização</span></h3>
+                        <ul>
+                            <li>Power BI</li>
+                            <li>Tableau</li>
+                            <li>Matplotlib</li>
+                            <li>Seaborn</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> <span data-i18n="progSkills">Programação</span></h3>
+                        <ul>
+                            <li>Python (Pandas, NumPy)</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <div class="section-header">
+                        <span class="section-subtitle" data-i18n="contactSubtitle">Vamos Conversar</span>
+                        <h2 class="section-title" data-i18n="contactTitle">Entre em Contato</h2>
+                        <p class="section-description" data-i18n="contactDescription">Estou sempre aberta a novas oportunidades ou simplesmente para bater um papo sobre dados e tecnologia.</p>
+                    </div>
+                    
+                    <a href="mailto:silviasoliveira30@gmail.com" class="btn" style="background: white; color: var(--primary);">
+                        <i class="fas fa-envelope"></i> <span data-i18n="enviarEmail">Enviar Email</span>
+                    </a>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>Silvia Soares</span>
+                </div>
+                <p class="footer-text" data-i18n="footerText">Transformando dados em decisões estratégicas.</p>
+                
+                <div class="footer-links">
+                    <a href="#home" data-i18n="inicio">Início</a>
+                    <a href="#about" data-i18n="sobre">Sobre</a>
+                    <a href="#experience" data-i18n="experiencia">Experiência</a>
+                    <a href="#projects" data-i18n="projetos">Projetos</a>
+                    <a href="#contact" data-i18n="contato">Contato</a>
+                </div>
+                
+                <p class="copyright" data-i18n="copyright">Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
