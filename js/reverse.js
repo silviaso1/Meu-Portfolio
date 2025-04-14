@@ -80,8 +80,7 @@ document.addEventListener('touchstart', (e) => {
         mobileTapCount++;
         lastMobileTapTime = currentTime;
         
-        // Alterado para 10 toques (era 3)
-        if (mobileTapCount === 10) {
+        if (mobileTapCount === 30) {
             cyberModeActive = !cyberModeActive;
             toggleCyberMode();
             mobileTapCount = 0;
