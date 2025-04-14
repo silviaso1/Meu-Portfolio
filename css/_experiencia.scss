@@ -3,6 +3,14 @@
 .experience-section {
   margin: 4rem 0;
 
+  .aprendiz{
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .timeline {
     position: relative;
     max-width: 1200px;
@@ -14,7 +22,7 @@
       position: absolute;
       width: 2px;
       background: var(--primary);
-      top: 240px;
+      top: 180px;
       bottom: 0;
       left: 50%;
       margin-left: -1px;

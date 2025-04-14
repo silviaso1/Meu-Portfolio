@@ -1,18 +1,17 @@
 const translations = {
     pt: {
         // Navbar
-        title: "Portfólio",
         inicio: "Início",
         sobre: "Sobre",
         experiencia: "Experiência",
         projetos: "Projetos",
         formacao: "Formação",
-        habilidades: "Habilidades",
         certificados: "Certificados",
+        habilidades: "Habilidades",
         contato: "Contato",
         
         // Hero Section
-        heroTitle: "Transformando Dados em <span>Insights Valiosos</span>",
+        heroTitle: "Transformando Dados em <span>Soluções</span>",
         heroText: "Sou <strong>Silvia</strong>, Analista de Dados com encanto pelo processo de organizar e interpretar informações.",
         verProjetos: "Ver Projetos",
         enviarContato: "Contato",
@@ -26,7 +25,7 @@ const translations = {
         
         // Experience Section
         experienceSubtitle: "Trajetória Profissional",
-        experienceTitle: "Experiência em Análise de Dados",
+        experienceTitle: "Minha Experiência",
         experienceDescription: "Minha jornada profissional com as principais responsabilidades.",
         exp1Title: "Aprendiz",
         exp1Company: "Pensi - Colégio e Curso",
@@ -118,18 +117,17 @@ const translations = {
     },
     en: {
         // Navbar
-        title: "Portfolio",
         inicio: "Home",
         sobre: "About",
         experiencia: "Experience",
         projetos: "Projects",
         formacao: "Education",
-        habilidades: "Skills",
         certificados: "Certificates",
+        habilidades: "Skills",
         contato: "Contact",
         
         // Hero Section
-        heroTitle: "Transforming Data into <span>Valuable Insights</span>",
+        heroTitle: "Transforming Data into <span>Solutions</span>",
         heroText: "I'm <strong>Silvia</strong>, a Data Analyst passionate about organizing and interpreting information.",
         verProjetos: "View Projects",
         enviarContato: "Contact",
@@ -235,18 +233,17 @@ const translations = {
     },
     es: {
         // Navbar
-        title: "Portafolio",
         inicio: "Inicio",
         sobre: "Sobre",
         experiencia: "Experiencia",
         projetos: "Proyectos",
         formacao: "Formación",
-        habilidades: "Habilidades",
         certificados: "Certificados",
+        habilidades: "Habilidades",
         contato: "Contacto",
         
         // Hero Section
-        heroTitle: "Transformando Datos en <span>Información Valiosa</span>",
+        heroTitle: "Transformando Datos en <span>Soluciones</span>",
         heroText: "Soy <strong>Silvia</strong>, Analista de Datos apasionada por organizar e interpretar información.",
         verProjetos: "Ver Proyectos",
         enviarContato: "Contacto",

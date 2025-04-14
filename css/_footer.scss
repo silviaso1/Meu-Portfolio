@@ -6,7 +6,7 @@ footer {
   background: var(--card);
   color: var(--text);
   border-top: 1px solid var(--border);
-
+  margin-top: -10px;
   .footer-content {
     max-width: 600px;
     margin: 0 auto;
@@ -54,3 +54,5 @@ footer {
     }
   }
 }
+
+
