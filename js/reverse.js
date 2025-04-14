@@ -72,17 +72,22 @@ document.addEventListener('touchstart', (e) => {
     if (e.touches.length === 1) { // Toque único
         const currentTime = Date.now();
         
-        if (currentTime - lastMobileTapTime > 500) {
-            mobileTapCount = 0; // Reset se intervalo > 500ms
+        // Reset após 1 segundo de inatividade
+        if (currentTime - lastMobileTapTime > 1000) {
+            mobileTapCount = 0;
         }
         
         mobileTapCount++;
         lastMobileTapTime = currentTime;
         
-        if (mobileTapCount === 3) {
+        // Alterado para 10 toques (era 3)
+        if (mobileTapCount === 10) {
             cyberModeActive = !cyberModeActive;
             toggleCyberMode();
             mobileTapCount = 0;
+            
+            
+            setTimeout(() => tapFeedback.remove(), 1000);
         }
     }
 });
