@@ -8,30 +8,6 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/traducao.js"></script>
-
-    <style>
-        #btnTopo {
-          position: fixed;
-          bottom: 20px;
-          right: 20px;
-          z-index: 100;
-          background-color: #007BFF;
-          color: white;
-          border: none;
-          padding: 10px 15px;
-          border-radius: 70%;
-          font-size: 20px;
-          cursor: pointer;
-          display: none;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-          transition: opacity 0.3s;
-          width: 50px;
-        }
-    
-        #btnTopo:hover {
-          background-color: #0056b3;
-        }
-      </style>
 </head>
 <body>
     <!-- Efeito de partículas -->
@@ -95,11 +71,7 @@
             </div>
         </div>
     </section>
-
-   
-    
     <section class="body">
-        <!-- Sobre -->
     <section class="about" id="about">
         <div class="container">
             <div class="section-header">
@@ -118,8 +90,6 @@
             </div>
         </div>
     </section>
-    
-    <!-- Experiência Profissional -->
     <section class="experience-section" id="experience">
         <div class="container">
             <div class="section-header">
@@ -160,8 +130,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="container">
             <div class="section-header">
@@ -241,8 +209,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Education Section -->
     <section class="education" id="education">
         <div class="container">
             <div class="section-header">
@@ -261,8 +227,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Publication Section -->
     <section class="publication-section" id="publication">
         <div class="container">
             <div class="section-header">
@@ -403,24 +367,6 @@
     <script src="./js/efeitos.js"></script>
     <script src="./js/reverse.js"></script>
     <script src="./js/traducao.js"></script>
-    
-    <script>
-    
-  window.onscroll = function () {
-    const botao = document.getElementById("btnTopo");
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-      botao.style.display = "block";
-    } else {
-      botao.style.display = "none";
-    }
-  };
-
-  document.getElementById("btnTopo").addEventListener("click", function () {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
-    </script>
+    <script src="./js/btnTopo.js"></script>
 </body>
 </html>
