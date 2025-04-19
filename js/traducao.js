@@ -1,12 +1,11 @@
 const translations = {
     pt: {
         // Navbar
-        inicio: "Início",
+    
         sobre: "Sobre",
         experiencia: "Experiência",
         projetos: "Projetos",
         formacao: "Formação",
-        certificados: "Certificados",
         habilidades: "Habilidades",
         contato: "Contato",
         
@@ -117,12 +116,11 @@ const translations = {
     },
     en: {
         // Navbar
-        inicio: "Home",
+       
         sobre: "About",
         experiencia: "Experience",
         projetos: "Projects",
         formacao: "Education",
-        certificados: "Certificates",
         habilidades: "Skills",
         contato: "Contact",
         
@@ -196,22 +194,7 @@ const translations = {
         baixarPDF: "Download PDF",
         lattes: "Lattes",
         
-        // Certificates Section
-        certificatesSubtitle: "Validated Knowledge",
-        certificatesTitle: "Highlighted Certifications",
-        certificatesDescription: "Continuous investment in education and skill validation through certifications.",
-        curso: "Course",
-        certificacao: "Certification",
-        cert1Title: "Business Management",
-        cert1Issuer: "Speed Treinamentos",
-        cert1Desc: "Fundamentals of Marketing Analytics, Market Analysis and Promotion Strategies, Resource Organization, Planning and Decision Making",
-        cert2Title: "Business Intelligence",
-        cert2Issuer: "FIAP",
-        cert2Desc: "Data management and manipulation, with emphasis on database creation and maintenance, analysis of large volumes of information, and implementation of ETL (Extraction, Transformation, and Load) processes.",
-        cert3Title: "Data Science",
-        cert3Issuer: "Ada Tech",
-        cert3Desc: "Training focused on data collection, analysis, and interpretation to generate insights and support decision-making. Covers fundamentals of statistics, programming (with Python), data visualization, machine learning, databases (SQL), as well as exploratory analysis techniques and manipulation of large data volumes.",
-        verCredencial: "View Credential",
+        
         
         // Skills Section
         skillsSubtitle: "Competencies",
@@ -233,12 +216,11 @@ const translations = {
     },
     es: {
         // Navbar
-        inicio: "Inicio",
+       
         sobre: "Sobre",
         experiencia: "Experiencia",
         projetos: "Proyectos",
         formacao: "Formación",
-        certificados: "Certificados",
         habilidades: "Habilidades",
         contato: "Contacto",
         
@@ -310,25 +292,7 @@ const translations = {
         pub1Topic4: "Impacto en el desarrollo de nuevos productos y servicios",
         lerPesquisa: "Leer Investigación Completa",
         baixarPDF: "Descargar PDF",
-        lattes: "Lattes",
-        
-        // Certificates Section
-        certificatesSubtitle: "Conocimiento Validado",
-        certificatesTitle: "Certificaciones Destacadas",
-        certificatesDescription: "Inversión continua en educación y validación de habilidades a través de certificaciones.",
-        curso: "Curso",
-        certificacao: "Certificación",
-        cert1Title: "Gestión Empresarial",
-        cert1Issuer: "Speed Treinamentos",
-        cert1Desc: "Fundamentos de Marketing Analytics, Análisis de mercado y Estrategias de Promoción, Organización de recursos, Planificación y Toma de Decisiones",
-        cert2Title: "Business Intelligence",
-        cert2Issuer: "FIAP",
-        cert2Desc: "Gestión y manipulación de datos, con énfasis en la creación y mantenimiento de bases de datos, análisis de grandes volúmenes de información e implementación de procesos ETL (Extracción, Transformación y Carga).",
-        cert3Title: "Ciencia de Datos",
-        cert3Issuer: "Ada Tech",
-        cert3Desc: "Formación enfocada en la recolección, análisis e interpretación de datos para generar insights y apoyar la toma de decisiones. Cubre fundamentos de estadística, programación (con Python), visualización de datos, machine learning, bases de datos (SQL), así como técnicas de análisis exploratorio y manipulación de grandes volúmenes de datos.",
-        verCredencial: "Ver Credencial",
-        
+        lattes: "Lattes",     
         // Skills Section
         skillsSubtitle: "Competencias",
         skillsTitle: "Habilidades Técnicas",

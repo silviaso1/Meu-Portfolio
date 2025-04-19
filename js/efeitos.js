@@ -6,7 +6,7 @@ ScrollReveal().reveal('.section-header', {
     reset: true
 });
 
-ScrollReveal().reveal('.project-card, .education-card, .certificate-card', {
+ScrollReveal().reveal('.project-card, .education-card, .certificate-card, .timeline, .publication, skills-categories', {
     delay: 300,
     interval: 100,
     origin: 'bottom',

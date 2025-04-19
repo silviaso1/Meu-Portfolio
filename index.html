@@ -3,39 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="title">Portfólio</title>
+    <title data-i18n="title">Silvia Soares</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <style>
+    <script src="./js/traducao.js"></script>
 
-        .language-dropdown { display: none; position: absolute; }
-        .language-dropdown.active { display: block; }
-        .nav-links.active { display: flex; }
-        @media (max-width: 768px) {
-            .nav-links { display: none; flex-direction: column; }
+    <style>
+        #btnTopo {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 100;
+          background-color: #007BFF;
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          border-radius: 70%;
+          font-size: 20px;
+          cursor: pointer;
+          display: none;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+          transition: opacity 0.3s;
+          width: 50px;
         }
-    </style>
+    
+        #btnTopo:hover {
+          background-color: #0056b3;
+        }
+      </style>
 </head>
 <body>
     <!-- Efeito de partículas -->
     <div id="particles-js"></div>
     
-    <!-- Navbar -->
+    <section class="nav">
     <nav>
         <div class="logo">
             <span>Silvia Soares</span>
         </div>
-        <ul class="nav-links">
-            <li><a href="#home" data-i18n="inicio">Início</a></li>
-            <li><a href="#about" data-i18n="sobre">Sobre</a></li>
-            <li><a href="#experience" data-i18n="experiencia">Experiência</a></li>
-            <li><a href="#projects" data-i18n="projetos">Projetos</a></li>
-            <li><a href="#education" data-i18n="formacao">Formação</a></li>
-            <li><a href="#certificates" data-i18n="certificados">Certificados</a></li>
-            <li><a href="#skills" data-i18n="habilidades">Habilidades</a></li>
-            <li><a href="#contact" data-i18n="contato">Contato</a></li>
-        </ul>
+        <div>
+            <ul class="nav-links">
+    
+                <li><a href="#about" data-i18n="sobre">Sobre</a></li>
+                <li><a href="#experience" data-i18n="experiencia">Experiência</a></li>
+                <li><a href="#projects" data-i18n="projetos">Projetos</a></li>
+                <li><a href="#education" data-i18n="formacao">Formação</a></li>
+                <li><a href="#skills" data-i18n="habilidades">Habilidades</a></li>
+                <li><a href="#contact" data-i18n="contato">Contato</a></li>
+            </ul>
+        </div>
         <div class="nav-right">
             <div class="language-switcher">
                 <button class="language-btn">
@@ -55,6 +72,7 @@
             </div>
         </div>
     </nav>
+    </section>
     
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -80,7 +98,8 @@
 
    
     
-    <!-- Sobre -->
+    <section class="body">
+        <!-- Sobre -->
     <section class="about" id="about">
         <div class="container">
             <div class="section-header">
@@ -90,7 +109,7 @@
             
             <div class="about-content">
                 <div class="about-image">
-                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQGKsj3ncn-9BA/profile-displayphoto-shrink_800_800/B4DZYtznguG4Ag-/0/1744525229102?e=1750291200&v=beta&t=9lxEP-aPw_drJ3n2ZLl3j3GXCOGY_ay5GKVF9W-oKqo" alt="Silvia Soares">
+                    <img src="./assets/foto/foto.jpeg" alt="Silvia Soares">
                 </div>
                 <div class="about-text">
                     <p data-i18n="aboutText1">Minha jornada na área começou com a curiosidade em entender como as informações ao nosso redor podem ser transformadas em conhecimento útil. Ao longo do tempo, fui descobrindo o potencial dos dados para revelar padrões, responder perguntas e ajudar na construção de soluções mais inteligentes. Desde então, venho me dedicando a aprofundar minhas habilidades em análise, visualização e interpretação de dados, sempre com o objetivo de tornar essas informações mais claras e aplicáveis no dia a dia.</p>
@@ -287,70 +306,7 @@
         </div>
     </section>
 
-    <!-- Certificates Section -->
-    <section class="certificates" id="certificates">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle" data-i18n="certificatesSubtitle">Conhecimento Validado</span>
-                <h2 class="section-title" data-i18n="certificatesTitle">Certificações Destacadas</h2>
-                <p class="section-description" data-i18n="certificatesDescription">Investimento contínuo em educação e validação de habilidades através de certificações.</p>
-            </div>
-            
-            <div class="certificates-container">
-                <div class="certificate-card">
-                    <div class="certificate-header">
-                        <span class="certificate-badge" data-i18n="curso">Curso</span>
-                        <h3 data-i18n="cert1Title">Gestão Empresarial</h3>
-                        <div class="certificate-issuer">
-                            <img src="https://media.licdn.com/dms/image/v2/C4E0BAQF9gniDG_MYBQ/company-logo_200_200/company-logo_200_200/0/1630619607251/speed_treinamentos_logo?e=2147483647&v=beta&t=4JksO1aeZa7DCHNGRJTE0kRVXVLpLtdfoizdTMhJhS0" alt="speed">
-                            <span data-i18n="cert1Issuer">Speed Treinamentos</span>
-                        </div>
-                    </div>
-                    <div class="certificate-body">
-                        <p data-i18n="cert1Desc">Fundamentos de Marketing Analytics, Análise de mercado e Estratégias de Promoção, Organização de recursos, Planejamento e Tomada de Decisão</p>
-                        <a href="#" class="certificate-link">
-                            <span data-i18n="verCredencial">Ver Credencial</span> <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="certificate-card">
-                    <div class="certificate-header">
-                        <span class="certificate-badge" data-i18n="certificacao">Certificação</span>
-                        <h3 data-i18n="cert2Title">Business Intelligence</h3>
-                        <div class="certificate-issuer">
-                            <img src="https://media.licdn.com/dms/image/v2/C4D0BAQFGUHRJ26bFDw/company-logo_200_200/company-logo_200_200/0/1631312349936?e=2147483647&v=beta&t=2cxZo7IPlpqVmRsvk_tS2TYDHSqh8Q3SlFYcLW9nlVc" alt="Fiap">
-                            <span data-i18n="cert2Issuer">FIAP</span>
-                        </div>
-                    </div>
-                    <div class="certificate-body">
-                        <p data-i18n="cert2Desc">Gerenciamento e a manipulação de dados, com ênfase na criação e manutenção de bancos de dados, análise de grandes volumes de informações e implementação de processos de ETL (Extração, Transformação e Carga).</p>
-                        <a href="#" class="certificate-link">
-                            <span data-i18n="verCredencial">Ver Credencial</span> <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="certificate-card">
-                    <div class="certificate-header">
-                        <span class="certificate-badge" data-i18n="certificacao">Certificação</span>
-                        <h3 data-i18n="cert3Title">Data Science</h3>
-                        <div class="certificate-issuer">
-                            <img src="https://yt3.googleusercontent.com/Cd0fpIfeFbdAVcKQVLfmogPG2yyZJsTbdNAioPeJ0lALUITE65Fp1UlL8EoLs7JXtT0H-wwOPXo=s900-c-k-c0x00ffffff-no-rj" alt="ada">
-                            <span data-i18n="cert3Issuer">Ada Tech</span>
-                        </div>
-                    </div>
-                    <div class="certificate-body">
-                        <p data-i18n="cert3Desc">Formação focada em coleta, análise e interpretação de dados para geração de insights e apoio à tomada de decisão. Abrange fundamentos de estatística, programação (com Python), visualização de dados, machine learning, bancos de dados (SQL), além de técnicas de análise exploratória e manipulação de grandes volumes de dados.</p>
-                        <a href="#" class="certificate-link">
-                            <span data-i18n="verCredencial">Ver Credencial</span> <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-  
+    
     <!-- Skills Section -->
     <section class="skills-section" id="skills">
         <div class="container">
@@ -392,7 +348,7 @@
             </div>
         </div>
     </section>
-    
+
     <section class="contact" id="contact">
         <div class="container">
             <div class="contact-container">
@@ -416,6 +372,9 @@
             </div>
         </div>
     </section>
+    </section>
+    
+    
      <!-- Wave Transition SVG -->
 <svg class="wave" viewBox="0 0 1440 320">
     <path fill="#FF6B6B" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
@@ -434,14 +393,34 @@
         
     </footer>
 
+    <button id="btnTopo" title="Voltar ao topo">↑</button>
+
+
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="./js/menu.js"></script>
-    <script src="./js/traducao.js"></script>
     <script src="./js/tema.js"></script>
     <script src="./js/particulas.js"></script>
     <script src="./js/efeitos.js"></script>
     <script src="./js/reverse.js"></script>
+    <script src="./js/traducao.js"></script>
     
+    <script>
     
+  window.onscroll = function () {
+    const botao = document.getElementById("btnTopo");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      botao.style.display = "block";
+    } else {
+      botao.style.display = "none";
+    }
+  };
+
+  document.getElementById("btnTopo").addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+    </script>
 </body>
 </html>

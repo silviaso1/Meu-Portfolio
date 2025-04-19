@@ -19,6 +19,8 @@
     }
   }
 
+ 
+
   .timeline-node {
     padding: 10px 40px;
     position: relative;
@@ -82,9 +84,13 @@
 
 // Hero Section
 .hero {
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     padding-top: 6rem;
     text-align: center;
+
+    p{
+      text-align: center;
+    }
   }
 
   h1 {
@@ -104,13 +110,13 @@
   }
 
   p {
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       margin: 0 auto 2rem;
     }
   }
 
   .hero-btns {
-    @media (max-width: 768px) {
+    @media (max-width: 1000px) {
       justify-content: center;
     }
 
@@ -133,36 +139,58 @@
   }
 }
 
+@media (max-width: 1035px){
+  nav{
+    .nav-links{
+      a{
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  .body{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 // Navbar
 .nav-links {
-  @media (max-width: 768px) {
-    position: fixed;
-    top: 80px;
-    left: -100%;
+  @media (max-width: 950px) {
+    position: absolute;
+    top: 65px;
+    left: 0;
     width: 100%;
-    height: calc(100vh - 80px);
     background: var(--card);
     flex-direction: column;
     align-items: center;
-    padding-top: 3rem;
-    gap: 2rem;
-    transition: all 0.5s ease;
-    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    z-index: 10;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
 
     &.active {
-      left: 0;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
     }
   }
 }
 
 .hamburger {
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     display: block;
   }
 }
 
 .language-dropdown {
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     right: auto;
     left: 0;
   }
@@ -211,3 +239,10 @@
     align-items: center;
   }
 }
+
+.language-dropdown { display: none; position: absolute; }
+        .language-dropdown.active { display: block; }
+        .nav-links.active { display: flex; }
+        @media (max-width: 768px) {
+            .nav-links { display: none; flex-direction: column; }
+        }

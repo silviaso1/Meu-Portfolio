@@ -13,6 +13,7 @@ themeToggle.addEventListener('click', () => {
     document.documentElement.style.setProperty('--bg', 'var(--bg-light)');
     document.documentElement.style.setProperty('--card', 'var(--card-light)');
     document.documentElement.style.setProperty('--border', 'var(--border-light)');
+    document.documentElement.style.setProperty('--card2', 'var(--card2-light)');
   } else {
     html.setAttribute('data-theme', 'dark');
     themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
@@ -23,6 +24,7 @@ themeToggle.addEventListener('click', () => {
     document.documentElement.style.setProperty('--bg', 'var(--bg-dark)');
     document.documentElement.style.setProperty('--card', 'var(--card-dark)');
     document.documentElement.style.setProperty('--border', 'var(--border-dark)');
+    document.documentElement.style.setProperty('--card2', 'var(--card2-dark)');
   }
 });
 

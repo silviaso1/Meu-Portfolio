@@ -6,6 +6,8 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     scroll-behavior: smooth;
+   
+
 
 }
 
@@ -25,7 +27,7 @@ html {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.30;
+    opacity: 0.35;
 }
 
 /* Container principal */
@@ -40,3 +42,9 @@ html {
     transition: fill 0.5s ease;
 }
 
+.body{
+  background-color: var(--card2);
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50px;
+}
