@@ -4,7 +4,6 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-
   position: relative;
   overflow: hidden;
 
@@ -12,13 +11,16 @@
     max-width: 800px;
     position: relative;
     z-index: 1;
+    
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
     line-height: 1.2;
     font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    
 
     span {
       background: linear-gradient(90deg, var(--primary), var(--accent));
@@ -29,10 +31,11 @@
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #9ca3af;
     max-width: 600px;
+    font-family: 'Poppins', sans-serif;
   }
 
   .hero-btns {
@@ -40,5 +43,4 @@
     gap: 1rem;
     margin-top: 2rem;
   }
-}
-
+} 
