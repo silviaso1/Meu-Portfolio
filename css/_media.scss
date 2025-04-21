@@ -94,7 +94,7 @@
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
 
     @media (max-width: 1024px) {
       font-size: 3rem;
@@ -224,6 +224,16 @@
 .publication {
   @media (max-width: 768px) {
     padding: 2rem 1.5rem;
+
+    .publication-header{
+      flex-direction: column;
+    }
+    .publication-title{
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      text-align: center;
+
+    }
   }
 }
 
